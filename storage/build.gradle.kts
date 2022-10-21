@@ -21,10 +21,4 @@ android {
         minSdk = 28
         targetSdk = 31
     }
-    buildFeatures {
-        compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = Versions.compose
-    }
 }

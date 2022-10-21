@@ -14,6 +14,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:${Versions.lifecycle}")
 
     implementation(project(Modules.design))
+    implementation(project(Modules.splash))
 
     implementation(Dependencies.hiltAndroid)
     implementation(Dependencies.navigation)

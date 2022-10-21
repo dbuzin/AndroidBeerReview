@@ -8,6 +8,7 @@ internal interface TokenProvider {
     fun setTokenPair(tokens: TokenPair)
     fun getTokenPair(): TokenPair
     fun clear(): Boolean
+    fun hasCached(): Boolean
 }
 
 internal class TokenProviderImpl @Inject constructor(
@@ -35,6 +36,10 @@ internal class TokenProviderImpl @Inject constructor(
 
     override fun clear(): Boolean {
         return tokenStorage.clearAll()
+    }
+
+    override fun hasCached(): Boolean {
+        return tokenStorage.exists(KEY_ACCESS) && tokenStorage.exists(KEY_REFRESH)
     }
 
     private companion object {

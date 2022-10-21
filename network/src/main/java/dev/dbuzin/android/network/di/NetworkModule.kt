@@ -8,6 +8,7 @@ import dev.dbuzin.android.network.cache.TokenProvider
 import dev.dbuzin.android.network.cache.TokenProviderImpl
 import dev.dbuzin.android.network.client.Api
 import dev.dbuzin.android.network.client.NetworkClientProvider
+import dev.dbuzin.android.network.data.repository.TokenCacheRepository
 import dev.dbuzin.android.storage.SecuredStorage
 import javax.inject.Singleton
 
@@ -38,5 +39,13 @@ object NetworkModule {
         clientProvider: NetworkClientProvider
     ) = Api(
         clientProvider = clientProvider
+    )
+
+    @Provides
+    @Singleton
+    internal fun provideTokenCacheRepository(
+        tokenProvider: TokenProvider
+    ) = TokenCacheRepository(
+        tokenProvider = tokenProvider
     )
 }
