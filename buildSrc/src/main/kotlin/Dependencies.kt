@@ -35,7 +35,8 @@ object Dependencies {
 
     const val ktor = "io.ktor:ktor-client-core:${Versions.ktor}"
     const val ktorAndroid = "io.ktor:ktor-client-android:${Versions.ktor}"
-    const val ktorSerialization = "io.ktor:ktor-client-serialization:${Versions.ktor}"
+    const val ktorSerialization = "io.ktor:ktor-serialization-kotlinx-json:${Versions.ktor}"
+    const val ktorNegotiation = "io.ktor:ktor-client-content-negotiation:${Versions.ktor}"
     const val ktorAuth = "io.ktor:ktor-client-auth:${Versions.ktor}"
     const val ktorCIO = "io.ktor:ktor-client-cio:${Versions.ktor}"
     const val ktorLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"

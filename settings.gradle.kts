@@ -17,3 +17,5 @@ rootProject.name = "AndroidBeerReview"
 include(":app")
 include(":core")
 include(":design")
+include(":network")
+include(":storage")
