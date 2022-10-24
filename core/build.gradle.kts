@@ -4,6 +4,8 @@ plugins {
 }
 
 dependencies {
+    implementation(project(Modules.design))
+
     implementation(Dependencies.composeMaterial)
     implementation(Dependencies.hiltAndroid)
     implementation(Dependencies.ktor)

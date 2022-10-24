@@ -53,7 +53,7 @@ val Typography = Typography(
     button = TextStyle(
         fontFamily = montserratFamily,
         fontWeight = FontWeight.Medium,
-        fontSize = 14.sp
+        fontSize = 16.sp
     ),
     caption = TextStyle(
         fontFamily = montserratFamily,

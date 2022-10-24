@@ -6,4 +6,5 @@ object Modules {
     const val storage = ":storage"
 
     const val splash = ":splash"
+    const val auth = ":auth"
 }

@@ -23,6 +23,8 @@ dependencies {
     implementation(Dependencies.accompanistPager)
     implementation(Dependencies.accompanistPagerIndicators)
 
+    implementation(Dependencies.lottie)
+
     debugImplementation(Dependencies.composeTooling)
 }
 

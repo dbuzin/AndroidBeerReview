@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="credentials_button_title">Enter</string>
+    <string name="credentials_input_login">Your email</string>
+    <string name="credentials_input_password">Your password</string>
+    <string name="credentials_registration_text_p1">Don\'t have an account?</string>
+    <string name="credentials_registration_text_p2">Register a new one!</string>
+</resources>

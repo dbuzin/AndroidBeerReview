@@ -41,6 +41,8 @@ object Dependencies {
     const val ktorCIO = "io.ktor:ktor-client-cio:${Versions.ktor}"
     const val ktorLogging = "io.ktor:ktor-client-logging:${Versions.ktor}"
 
+    const val lottie = "com.airbnb.android:lottie-compose:${Versions.lottie}"
+
     const val material = "com.google.android.material:material:${Versions.material}"
 
     const val navigation = "androidx.navigation:navigation-compose:${Versions.navigation}"

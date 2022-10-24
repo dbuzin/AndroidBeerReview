@@ -1,7 +1,9 @@
 package dev.dbuzin.android.network.client
 
 import dev.dbuzin.android.network.cache.TokenProvider
+import dev.dbuzin.android.network.data.model.common.ResponseException
 import dev.dbuzin.android.network.data.model.common.TokenPair
+import dev.dbuzin.android.network.data.model.response.ErrorResponse
 import io.ktor.client.*
 import io.ktor.client.call.*
 import io.ktor.client.engine.cio.*
@@ -20,7 +22,7 @@ internal class NetworkClient(
     private val refresh: suspend () -> TokenPair
 ) {
 
-    val httpClient = HttpClient(CIO) {
+    private val httpClient = HttpClient(CIO) {
         install(ContentNegotiation) {
             json(
                 Json {
@@ -49,6 +51,13 @@ internal class NetworkClient(
                         refreshToken = updatedTokens.refreshToken
                     )
                 }
+            }
+        }
+
+        HttpResponseValidator {
+            validateResponse { response ->
+                val body: ErrorResponse = response.body()
+                throw ResponseException(body.message)
             }
         }
 

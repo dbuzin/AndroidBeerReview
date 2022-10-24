@@ -4,12 +4,14 @@ import androidx.compose.ui.graphics.Color
 
 object Colors {
     object Text {
-        val darkBrown = Color(0xFF5D4037)
+        val russet = Color(0xCC75575B)
+        val aubergine = Color(0xFF3B0910)
     }
 
     object Background {
         val yellow = Color(0xFFFFEE58)
         val lightYellow = Color(0xFFFFFF8B)
+        val travertine = Color(0xCCFFFDE7)
     }
 
     object Element {

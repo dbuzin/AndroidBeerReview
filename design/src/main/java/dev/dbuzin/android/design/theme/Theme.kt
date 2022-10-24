@@ -13,10 +13,10 @@ private val LightColorPalette = lightColors(
     background = Color.White,
     surface = Color.White,
     error = Colors.Element.error,
-    onPrimary = Colors.Text.darkBrown,
-    onSecondary = Colors.Text.darkBrown,
-    onBackground = Colors.Text.darkBrown,
-    onSurface = Colors.Text.darkBrown,
+    onPrimary = Colors.Text.aubergine,
+    onSecondary = Colors.Text.aubergine,
+    onBackground = Colors.Text.aubergine,
+    onSurface = Colors.Text.aubergine,
     onError = Color.White
 )
 

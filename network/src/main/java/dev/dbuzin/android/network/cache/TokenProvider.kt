@@ -5,7 +5,7 @@ import dev.dbuzin.android.storage.SecuredStorage
 import javax.inject.Inject
 
 internal interface TokenProvider {
-    fun setTokenPair(tokens: TokenPair)
+    fun setTokenPair(tokens: TokenPair): Boolean
     fun getTokenPair(): TokenPair
     fun clear(): Boolean
     fun hasCached(): Boolean
@@ -14,12 +14,11 @@ internal interface TokenProvider {
 internal class TokenProviderImpl @Inject constructor(
     private val tokenStorage: SecuredStorage
 ) : TokenProvider {
-    override fun setTokenPair(tokens: TokenPair) {
-        tokenStorage.set(
+    override fun setTokenPair(tokens: TokenPair): Boolean {
+        return tokenStorage.set(
             key = KEY_ACCESS,
             stringValue = tokens.accessToken
-        )
-        tokenStorage.set(
+        ) && tokenStorage.set(
             key = KEY_REFRESH,
             stringValue = tokens.refreshToken
         )

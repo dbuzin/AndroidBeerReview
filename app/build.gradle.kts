@@ -15,6 +15,7 @@ dependencies {
 
     implementation(project(Modules.design))
     implementation(project(Modules.splash))
+    implementation(project(Modules.auth))
 
     implementation(Dependencies.hiltAndroid)
     implementation(Dependencies.navigation)

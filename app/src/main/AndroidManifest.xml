@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="dev.dbuzin.android.beerreview">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".app.BeerReviewsApp"
         android:allowBackup="true"

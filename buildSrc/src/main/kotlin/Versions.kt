@@ -20,6 +20,7 @@ object Versions {
     const val hiltNavigation = "1.0.0"
     const val hiltViewModel = "1.0.0-alpha03"
     const val ktor = "2.1.2"
+    const val lottie = "5.2.0"
 
     const val gradlePlugin = "1.6.10"
 
