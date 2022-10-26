@@ -16,5 +16,6 @@ object Colors {
 
     object Element {
         val error = Color(0xFFF44336)
+        val success = Color(0xFF61D800)
     }
 }

@@ -56,8 +56,10 @@ internal class NetworkClient(
 
         HttpResponseValidator {
             validateResponse { response ->
-                val body: ErrorResponse = response.body()
-                throw ResponseException(body.message)
+                if (response.status.value !in 200..299) {
+                    val body: ErrorResponse = response.body()
+                    throw ResponseException(body.message)
+                }
             }
         }
 

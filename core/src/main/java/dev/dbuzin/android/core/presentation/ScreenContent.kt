@@ -59,6 +59,7 @@ fun ScreenContent(
         scaffoldState = scaffoldState,
         content = {
             Box {
+                content()
                 ErrorSnackBar(
                     hostState = snackState,
                     modifier = Modifier
@@ -68,7 +69,6 @@ fun ScreenContent(
                             vertical = snackBarVerticalPadding.dp
                         )
                 )
-                content()
             }
         },
     )

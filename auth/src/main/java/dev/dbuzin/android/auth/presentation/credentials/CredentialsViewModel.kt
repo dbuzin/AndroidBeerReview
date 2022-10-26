@@ -63,7 +63,9 @@ internal class CredentialsViewModel @Inject constructor(
                     onErrorCredentials()
                 }
             }
-            is CredentialsState.Action.OnRegistrationClicked -> {}
+            is CredentialsState.Action.OnRegistrationClicked -> {
+                sendEffect(CredentialsState.Effect.OnNavigateToRegistration)
+            }
         }
     }
 
