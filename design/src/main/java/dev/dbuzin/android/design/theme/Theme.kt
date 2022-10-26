@@ -6,18 +6,18 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
 private val LightColorPalette = lightColors(
-    primary = Colors.Background.lightYellow,
-    primaryVariant = Colors.Background.yellow,
-    secondary = Colors.Background.lightYellow,
-    secondaryVariant = Colors.Background.yellow,
-    background = Color.White,
-    surface = Color.White,
+    primary = Colors.Text.aubergine,
+    primaryVariant = Colors.Text.russet,
+    secondary = Colors.Text.aubergine,
+    secondaryVariant = Colors.Text.russet,
+    background = Colors.Background.travertine,
+    surface = Colors.Background.travertine,
     error = Colors.Element.error,
-    onPrimary = Colors.Text.aubergine,
-    onSecondary = Colors.Text.aubergine,
+    onPrimary = Colors.Background.travertine,
+    onSecondary = Colors.Background.travertine,
     onBackground = Colors.Text.aubergine,
     onSurface = Colors.Text.aubergine,
-    onError = Color.White
+    onError = Colors.Background.travertine
 )
 
 @Composable

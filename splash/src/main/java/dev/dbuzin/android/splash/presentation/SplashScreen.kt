@@ -31,7 +31,7 @@ internal fun SplashScreen(
     SystemBarColor(
         systemUiController = systemUiController,
         specialStatusColor = Color.White,
-        specialNavColor = Colors.Background.lightYellow
+        specialNavColor = Colors.Background.travertine
     )
 
     ScreenContent(
@@ -49,7 +49,7 @@ internal fun SplashScreen(
                 .fillMaxSize()
                 .background(
                     brush = Brush.verticalGradient(
-                        colors = listOf(Color.White, Colors.Background.lightYellow)
+                        colors = listOf(Color.White, Colors.Background.travertine)
                     )
                 ),
             horizontalAlignment = Alignment.CenterHorizontally,

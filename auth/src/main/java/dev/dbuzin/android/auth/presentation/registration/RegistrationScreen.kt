@@ -91,7 +91,7 @@ internal fun RegistrationScreen(
                     RegistrationMainContent(
                         viewState = viewState,
                         onAction = onAction,
-                        isSmallScreen = screenSize.screenWidthInfo is ScreenSize.ScreenType.SMALL
+                        isSmallScreen = screenSize.screenHeightInfo is ScreenSize.ScreenType.SMALL
                     )
                 }
                 SuccessSnackBar(
@@ -125,18 +125,6 @@ private fun RegistrationMainContent(
             onValueChange = { name ->
                 onAction(RegistrationState.Action.OnNameChanged(name))
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = Colors.Text.aubergine,
-                backgroundColor = Color.White,
-                focusedBorderColor = Colors.Text.aubergine,
-                unfocusedBorderColor = Colors.Text.russet,
-                cursorColor = Colors.Text.aubergine,
-                focusedLabelColor = Colors.Text.aubergine,
-                unfocusedLabelColor = Colors.Text.russet,
-                errorBorderColor = Colors.Element.error,
-                errorLabelColor = Colors.Element.error,
-                errorCursorColor = Colors.Element.error,
-            ),
             label = {
                 Text(
                     text = stringResource(id = R.string.registration_input_name)
@@ -157,18 +145,6 @@ private fun RegistrationMainContent(
             onValueChange = { email ->
                 onAction(RegistrationState.Action.OnEmailChanged(email))
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = Colors.Text.aubergine,
-                backgroundColor = Color.White,
-                focusedBorderColor = Colors.Text.aubergine,
-                unfocusedBorderColor = Colors.Text.russet,
-                cursorColor = Colors.Text.aubergine,
-                focusedLabelColor = Colors.Text.aubergine,
-                unfocusedLabelColor = Colors.Text.russet,
-                errorBorderColor = Colors.Element.error,
-                errorLabelColor = Colors.Element.error,
-                errorCursorColor = Colors.Element.error,
-            ),
             label = {
                 Text(
                     text = stringResource(id = R.string.registration_input_email)
@@ -189,18 +165,6 @@ private fun RegistrationMainContent(
             onValueChange = { password ->
                 onAction(RegistrationState.Action.OnPasswordChanged(password))
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = Colors.Text.aubergine,
-                backgroundColor = Color.White,
-                focusedBorderColor = Colors.Text.aubergine,
-                unfocusedBorderColor = Colors.Text.russet,
-                cursorColor = Colors.Text.aubergine,
-                focusedLabelColor = Colors.Text.aubergine,
-                unfocusedLabelColor = Colors.Text.russet,
-                errorBorderColor = Colors.Element.error,
-                errorLabelColor = Colors.Element.error,
-                errorCursorColor = Colors.Element.error,
-            ),
             label = {
                 Text(
                     text = stringResource(id = R.string.registration_input_password)
@@ -223,18 +187,6 @@ private fun RegistrationMainContent(
             onValueChange = { password ->
                 onAction(RegistrationState.Action.OnRepeatChanged(password))
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = Colors.Text.aubergine,
-                backgroundColor = Color.White,
-                focusedBorderColor = Colors.Text.aubergine,
-                unfocusedBorderColor = Colors.Text.russet,
-                cursorColor = Colors.Text.aubergine,
-                focusedLabelColor = Colors.Text.aubergine,
-                unfocusedLabelColor = Colors.Text.russet,
-                errorBorderColor = Colors.Element.error,
-                errorLabelColor = Colors.Element.error,
-                errorCursorColor = Colors.Element.error,
-            ),
             label = {
                 Text(
                     text = stringResource(id = R.string.registration_input_repeat)

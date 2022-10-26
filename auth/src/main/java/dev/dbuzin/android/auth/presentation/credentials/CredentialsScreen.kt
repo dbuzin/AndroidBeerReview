@@ -114,18 +114,6 @@ private fun CredentialsScreenMainContent(
             onValueChange = { login ->
                 onAction(CredentialsState.Action.OnLoginChanged(login))
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = Colors.Text.aubergine,
-                backgroundColor = Color.White,
-                focusedBorderColor = Colors.Text.aubergine,
-                unfocusedBorderColor = Colors.Text.russet,
-                cursorColor = Colors.Text.aubergine,
-                focusedLabelColor = Colors.Text.aubergine,
-                unfocusedLabelColor = Colors.Text.russet,
-                errorBorderColor = Colors.Element.error,
-                errorLabelColor = Colors.Element.error,
-                errorCursorColor = Colors.Element.error,
-            ),
             label = {
                 Text(
                     text = stringResource(id = R.string.credentials_input_login)
@@ -147,18 +135,6 @@ private fun CredentialsScreenMainContent(
             onValueChange = { password ->
                 onAction(CredentialsState.Action.OnPasswordChanged(password))
             },
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                textColor = Colors.Text.aubergine,
-                backgroundColor = Color.White,
-                focusedBorderColor = Colors.Text.aubergine,
-                unfocusedBorderColor = Colors.Text.russet,
-                cursorColor = Colors.Text.aubergine,
-                focusedLabelColor = Colors.Text.aubergine,
-                unfocusedLabelColor = Colors.Text.russet,
-                errorBorderColor = Colors.Element.error,
-                errorLabelColor = Colors.Element.error,
-                errorCursorColor = Colors.Element.error,
-            ),
             label = {
                 Text(
                     text = stringResource(id = R.string.credentials_input_password)
