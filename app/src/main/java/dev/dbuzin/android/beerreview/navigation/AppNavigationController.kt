@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.google.accompanist.systemuicontroller.SystemUiController
 import dev.dbuzin.android.auth.navigation.AuthNavigationController
+import dev.dbuzin.android.main.navigation.MainNavigationController
 import dev.dbuzin.android.splash.presentation.SplashDestination
 
 @Composable
@@ -31,7 +32,11 @@ internal fun AppNavigationController(
                     }
                 },
                 onNavigateToMain = {
-
+                    navController.navigate(AppNavigationKeys.MAIN) {
+                        popUpTo(AppNavigationKeys.SPLASH) {
+                            inclusive = true
+                        }
+                    }
                 }
             )
         }
@@ -39,8 +44,17 @@ internal fun AppNavigationController(
             AuthNavigationController(
                 systemUiController = systemUiController,
                 onNavigateToMain = {
-
+                    navController.navigate(AppNavigationKeys.MAIN) {
+                        popUpTo(AppNavigationKeys.AUTH) {
+                            inclusive = true
+                        }
+                    }
                 }
+            )
+        }
+        composable(AppNavigationKeys.MAIN) {
+            MainNavigationController(
+                systemUiController = systemUiController
             )
         }
     }

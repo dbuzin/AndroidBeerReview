@@ -11,8 +11,8 @@ import dev.dbuzin.android.design.theme.Colors
 @NonRestartableComposable
 fun SystemBarColor(
     systemUiController: SystemUiController,
-    specialNavColor: Color = Color.White,
-    specialStatusColor: Color = Colors.Background.yellow
+    specialNavColor: Color = Colors.Background.travertine,
+    specialStatusColor: Color = Colors.Background.travertine
 ) {
     SideEffect {
         systemUiController.setNavigationBarColor(

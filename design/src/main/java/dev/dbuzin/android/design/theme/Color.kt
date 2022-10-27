@@ -12,6 +12,7 @@ object Colors {
         val yellow = Color(0xFFFFEE58)
         val lightYellow = Color(0xFFFFFF8B)
         val travertine = Color(0xCCFFFDE7)
+        val sandal = Color(0xCCAC7F66)
     }
 
     object Element {
