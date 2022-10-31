@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.google.accompanist.systemuicontroller.SystemUiController
+import dev.dbuzin.android.home.navigation.HomeNavigationController
 
 @Composable
 internal fun BottomNavigationController(
@@ -33,7 +34,11 @@ internal fun BottomNavigationController(
         startDestination = BottomNavigationKeys.HOME.route,
         modifier = Modifier
     ) {
-        composable(BottomNavigationKeys.HOME.route) {}
+        composable(BottomNavigationKeys.HOME.route) {
+            HomeNavigationController(
+                onAppTabsVisibility = onAppTabsVisibility
+            )
+        }
         composable(BottomNavigationKeys.SCAN.route) {}
         composable(BottomNavigationKeys.PROFILE.route) {}
     }

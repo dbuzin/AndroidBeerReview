@@ -9,8 +9,6 @@ dependencies {
 
     implementation(project(Modules.core))
     implementation(project(Modules.design))
-    implementation(project(Modules.network))
-    implementation(project(Modules.home))
 
     debugImplementation(Dependencies.composeTooling)
 

@@ -8,4 +8,5 @@ object Modules {
     const val splash = ":splash"
     const val auth = ":auth"
     const val main = ":main"
+    const val home = ":home"
 }
